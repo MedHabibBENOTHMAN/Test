@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="parametreModel1StoreContainer" CdmEntityContainer="parametreEntities5">
+    <EntitySetMapping Name="arretimprevu">
+      <EntityTypeMapping TypeName="parametreModel1.arretimprevu">
+        <MappingFragment StoreEntitySet="arretimprevu">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="arret" ColumnName="arret" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

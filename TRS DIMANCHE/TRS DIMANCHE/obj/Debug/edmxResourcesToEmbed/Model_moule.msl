@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="parametreModel3StoreContainer" CdmEntityContainer="Entities_moule">
+    <EntitySetMapping Name="moule">
+      <EntityTypeMapping TypeName="parametreModel3.moule">
+        <MappingFragment StoreEntitySet="moule">
+          <ScalarProperty Name="idmoule" ColumnName="idmoule" />
+          <ScalarProperty Name="reference" ColumnName="reference" />
+          <ScalarProperty Name="produit" ColumnName="produit" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="empreinte" ColumnName="empreinte" />
+          <ScalarProperty Name="qualite_seuil_1" ColumnName="qualite_seuil_1" />
+          <ScalarProperty Name="qualite_seuil_2" ColumnName="qualite_seuil_2" />
+          <ScalarProperty Name="qualite_seuil_3" ColumnName="qualite_seuil_3" />
+          <ScalarProperty Name="temps_de_cycle" ColumnName="temps_de_cycle" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

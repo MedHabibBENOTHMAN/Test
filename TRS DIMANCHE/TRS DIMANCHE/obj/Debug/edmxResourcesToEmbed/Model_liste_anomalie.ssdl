@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="parametreModel_liste_anomalie.Store" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.5" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="liste_rebut">
+    <Key>
+      <PropertyRef Name="idrebut" />
+    </Key>
+    <Property Name="idrebut" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="rebut" Type="varchar" MaxLength="45" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="parametreModel_liste_anomalieStoreContainer">
+    <EntitySet Name="liste_rebut" EntityType="Self.liste_rebut" Schema="parametre" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

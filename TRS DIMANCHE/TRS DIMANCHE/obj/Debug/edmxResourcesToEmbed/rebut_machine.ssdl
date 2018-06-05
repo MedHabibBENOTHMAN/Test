@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="trs_machineModel.Store" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.5" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="machine-1-rebut">
+    <Key>
+      <PropertyRef Name="idmachine-1-rebut" />
+    </Key>
+    <Property Name="idmachine-1-rebut" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="temps" Type="datetime" Precision="0" />
+    <Property Name="of" Type="varchar" MaxLength="45" />
+    <Property Name="produit" Type="varchar" MaxLength="45" />
+    <Property Name="quantité" Type="int" />
+    <Property Name="rebut" Type="varchar" MaxLength="45" />
+  </EntityType>
+  <EntityContainer Name="trs_machineModelStoreContainer">
+    <EntitySet Name="machine-1-rebut" EntityType="Self.machine-1-rebut" Schema="trs_machine" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

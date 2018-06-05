@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="trs_machineModelStoreContainer" CdmEntityContainer="rebut_machine_Entities">
+    <EntitySetMapping Name="machine_1_rebut">
+      <EntityTypeMapping TypeName="trs_machineModel.machine_1_rebut">
+        <MappingFragment StoreEntitySet="machine-1-rebut">
+          <ScalarProperty Name="produit" ColumnName="produit" />
+          <ScalarProperty Name="idmachine_1_rebut" ColumnName="idmachine-1-rebut" />
+          <ScalarProperty Name="quantité" ColumnName="quantité" />
+          <ScalarProperty Name="rebut" ColumnName="rebut" />
+          <ScalarProperty Name="temps" ColumnName="temps" />
+          <ScalarProperty Name="of" ColumnName="of" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

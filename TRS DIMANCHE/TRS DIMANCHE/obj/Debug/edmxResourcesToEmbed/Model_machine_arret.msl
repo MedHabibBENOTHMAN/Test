@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="trs_machineModel1StoreContainer" CdmEntityContainer="trs_machineEntities1">
+    <EntitySetMapping Name="machine_1_arrets">
+      <EntityTypeMapping TypeName="trs_machineModel1.machine_1_arrets">
+        <MappingFragment StoreEntitySet="machine_1_arrets">
+          <ScalarProperty Name="fin" ColumnName="fin" />
+          <ScalarProperty Name="debut" ColumnName="debut" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="of" ColumnName="of" />
+          <ScalarProperty Name="arret" ColumnName="arret" />
+          <ScalarProperty Name="duree" ColumnName="duree" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

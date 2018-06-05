@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="trs_machineModel2.Store" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.5" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="machine_1_trs">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="date" Type="datetime" Precision="0" />
+          <Property Name="user" Type="varchar" MaxLength="45" />
+          <Property Name="equipe" Type="varchar" MaxLength="45" />
+          <Property Name="of_1" Type="varchar" MaxLength="45" />
+          <Property Name="of_2" Type="varchar" MaxLength="45" />
+          <Property Name="moule" Type="varchar" MaxLength="45" />
+          <Property Name="produit_1" Type="varchar" MaxLength="45" />
+          <Property Name="produit_2" Type="varchar" MaxLength="45" />
+          <Property Name="empreinte" Type="int" />
+          <Property Name="matiere" Type="varchar" MaxLength="45" />
+          <Property Name="palette" Type="varchar" MaxLength="45" />
+          <Property Name="temps_brut" Type="double" />
+          <Property Name="temps_requis" Type="double" />
+          <Property Name="disponibilite" Type="double" />
+          <Property Name="qte_produite" Type="int" />
+          <Property Name="qte_acceptee" Type="int" />
+          <Property Name="qualite" Type="double" />
+          <Property Name="cadence_reele" Type="double" />
+          <Property Name="cadence_therorique" Type="double" />
+          <Property Name="performance" Type="double" />
+          <Property Name="TRS" Type="double" />
+          <Property Name="qualite_produit_1" Type="double" />
+          <Property Name="qualite_produit_2" Type="double" />
+        </EntityType>
+        <EntityContainer Name="trs_machineModel2StoreContainer">
+          <EntitySet Name="machine_1_trs" EntityType="Self.machine_1_trs" Schema="trs_machine" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="trs_machineModel2" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="machine_1_trs">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="date" Type="DateTime" />
+          <Property Name="temps_brut" Type="Double" />
+          <Property Name="temps_requis" Type="Double" />
+          <Property Name="disponibilite" Type="Double" />
+          <Property Name="qte_produite" Type="Int32" />
+          <Property Name="qte_acceptee" Type="Int32" />
+          <Property Name="qualite" Type="Double" />
+          <Property Name="cadence_reele" Type="Double" />
+          <Property Name="cadence_therorique" Type="Double" />
+          <Property Name="performance" Type="Double" />
+          <Property Name="TRS" Type="Double" />
+          <Property Name="user" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="moule" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="produit_1" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="produit_2" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="empreinte" Type="Int32" />
+          <Property Name="matiere" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="palette" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="equipe" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="of_2" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="of_1" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="qualite_produit_1" Type="Double" />
+          <Property Name="qualite_produit_2" Type="Double" />
+        </EntityType>
+        <EntityContainer Name="trs_machineEntities2" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="machine_1_trs" EntityType="Self.machine_1_trs" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="trs_machineModel2StoreContainer" CdmEntityContainer="trs_machineEntities2">
+          <EntitySetMapping Name="machine_1_trs">
+            <EntityTypeMapping TypeName="trs_machineModel2.machine_1_trs">
+              <MappingFragment StoreEntitySet="machine_1_trs">
+                <ScalarProperty Name="qualite_produit_2" ColumnName="qualite_produit_2" />
+                <ScalarProperty Name="qualite_produit_1" ColumnName="qualite_produit_1" />
+                <ScalarProperty Name="of_1" ColumnName="of_1" />
+                <ScalarProperty Name="of_2" ColumnName="of_2" />
+                <ScalarProperty Name="equipe" ColumnName="equipe" />
+                <ScalarProperty Name="palette" ColumnName="palette" />
+                <ScalarProperty Name="matiere" ColumnName="matiere" />
+                <ScalarProperty Name="empreinte" ColumnName="empreinte" />
+                <ScalarProperty Name="produit_2" ColumnName="produit_2" />
+                <ScalarProperty Name="produit_1" ColumnName="produit_1" />
+                <ScalarProperty Name="moule" ColumnName="moule" />
+                <ScalarProperty Name="user" ColumnName="user" />
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="date" ColumnName="date" />
+                <ScalarProperty Name="temps_brut" ColumnName="temps_brut" />
+                <ScalarProperty Name="temps_requis" ColumnName="temps_requis" />
+                <ScalarProperty Name="disponibilite" ColumnName="disponibilite" />
+                <ScalarProperty Name="qte_produite" ColumnName="qte_produite" />
+                <ScalarProperty Name="qte_acceptee" ColumnName="qte_acceptee" />
+                <ScalarProperty Name="qualite" ColumnName="qualite" />
+                <ScalarProperty Name="cadence_reele" ColumnName="cadence_reele" />
+                <ScalarProperty Name="cadence_therorique" ColumnName="cadence_therorique" />
+                <ScalarProperty Name="performance" ColumnName="performance" />
+                <ScalarProperty Name="TRS" ColumnName="TRS" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

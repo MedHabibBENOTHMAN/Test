@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="parametre_arrets_prevus_EntitiesStoreContainer" CdmEntityContainer="arrets_prevus_Entities">
+    <EntitySetMapping Name="arretprevu">
+      <EntityTypeMapping TypeName="parametre_arrets_prevus_Entities.arretprevu">
+        <MappingFragment StoreEntitySet="arretprevu">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="arret" ColumnName="arret" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

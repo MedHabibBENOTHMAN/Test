@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="machine_production_modelStoreContainer" CdmEntityContainer="machine_1_production_Entities">
+    <EntitySetMapping Name="machine_1_production">
+      <EntityTypeMapping TypeName="machine_production_model.machine_1_production">
+        <MappingFragment StoreEntitySet="machine_1_production">
+          <ScalarProperty Name="idmachine_1_production" ColumnName="idmachine_1_production" />
+          <ScalarProperty Name="debut" ColumnName="debut" />
+          <ScalarProperty Name="fin" ColumnName="fin" />
+          <ScalarProperty Name="of_1" ColumnName="of_1" />
+          <ScalarProperty Name="of_2" ColumnName="of_2" />
+          <ScalarProperty Name="ref_1" ColumnName="ref_1" />
+          <ScalarProperty Name="ref_2" ColumnName="ref_2" />
+          <ScalarProperty Name="moule" ColumnName="moule" />
+          <ScalarProperty Name="matiere" ColumnName="matiere" />
+          <ScalarProperty Name="palette" ColumnName="palette" />
+          <ScalarProperty Name="empreinte" ColumnName="empreinte" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="ref_1_total" ColumnName="ref_1_total" />
+          <ScalarProperty Name="ref_2_total" ColumnName="ref_2_total" />
+          <ScalarProperty Name="ref_1_rebut" ColumnName="ref_1_rebut" />
+          <ScalarProperty Name="ref_2_rebut" ColumnName="ref_2_rebut" />
+          <ScalarProperty Name="ref_1_qualite" ColumnName="ref_1_qualite" />
+          <ScalarProperty Name="ref_2_qualite" ColumnName="ref_2_qualite" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

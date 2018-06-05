@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="trs_machine_rebus" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="machine_1_rebus">
+    <Key>
+      <PropertyRef Name="idmachine_1_rebus" />
+    </Key>
+    <Property Name="idmachine_1_rebus" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="quantité" Type="Int32" />
+    <Property Name="anomalie" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="trs_machineEntities3" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="machine_1_rebus" EntityType="Self.machine_1_rebus" />
+  </EntityContainer>
+</Schema>

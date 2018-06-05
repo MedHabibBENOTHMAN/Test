@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="trs_machineModel2StoreContainer" CdmEntityContainer="trs_machineEntities2">
+    <EntitySetMapping Name="machine_1_trs">
+      <EntityTypeMapping TypeName="trs_machineModel2.machine_1_trs">
+        <MappingFragment StoreEntitySet="machine_1_trs">
+          <ScalarProperty Name="qualite_produit_2" ColumnName="qualite_produit_2" />
+          <ScalarProperty Name="qualite_produit_1" ColumnName="qualite_produit_1" />
+          <ScalarProperty Name="of_1" ColumnName="of_1" />
+          <ScalarProperty Name="of_2" ColumnName="of_2" />
+          <ScalarProperty Name="equipe" ColumnName="equipe" />
+          <ScalarProperty Name="palette" ColumnName="palette" />
+          <ScalarProperty Name="matiere" ColumnName="matiere" />
+          <ScalarProperty Name="empreinte" ColumnName="empreinte" />
+          <ScalarProperty Name="produit_2" ColumnName="produit_2" />
+          <ScalarProperty Name="produit_1" ColumnName="produit_1" />
+          <ScalarProperty Name="moule" ColumnName="moule" />
+          <ScalarProperty Name="user" ColumnName="user" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="temps_brut" ColumnName="temps_brut" />
+          <ScalarProperty Name="temps_requis" ColumnName="temps_requis" />
+          <ScalarProperty Name="disponibilite" ColumnName="disponibilite" />
+          <ScalarProperty Name="qte_produite" ColumnName="qte_produite" />
+          <ScalarProperty Name="qte_acceptee" ColumnName="qte_acceptee" />
+          <ScalarProperty Name="qualite" ColumnName="qualite" />
+          <ScalarProperty Name="cadence_reele" ColumnName="cadence_reele" />
+          <ScalarProperty Name="cadence_therorique" ColumnName="cadence_therorique" />
+          <ScalarProperty Name="performance" ColumnName="performance" />
+          <ScalarProperty Name="TRS" ColumnName="TRS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

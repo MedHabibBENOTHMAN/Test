@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="parametreModelStoreContainer" CdmEntityContainer="parametreEntities1">
+    <EntitySetMapping Name="arretimprevu">
+      <EntityTypeMapping TypeName="parametreModel.arretimprevu">
+        <MappingFragment StoreEntitySet="arretimprevu">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="arret" ColumnName="arret" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="arretprevu">
+      <EntityTypeMapping TypeName="parametreModel.arretprevu">
+        <MappingFragment StoreEntitySet="arretprevu">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="arret" ColumnName="arret" />
+          <ScalarProperty Name="duree" ColumnName="duree" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="machine">
+      <EntityTypeMapping TypeName="parametreModel.machine">
+        <MappingFragment StoreEntitySet="machine">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="machine1" ColumnName="machine" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="moule">
+      <EntityTypeMapping TypeName="parametreModel.moule">
+        <MappingFragment StoreEntitySet="moule">
+          <ScalarProperty Name="idmoule" ColumnName="idmoule" />
+          <ScalarProperty Name="ref" ColumnName="ref" />
+          <ScalarProperty Name="nom" ColumnName="nom" />
+          <ScalarProperty Name="empreinte" ColumnName="empreinte" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="produit">
+      <EntityTypeMapping TypeName="parametreModel.produit">
+        <MappingFragment StoreEntitySet="produit">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="produit1" ColumnName="produit" />
+          <ScalarProperty Name="tempsdecycle" ColumnName="tempsdecycle" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="users">
+      <EntityTypeMapping TypeName="parametreModel.users">
+        <MappingFragment StoreEntitySet="users">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="login" ColumnName="login" />
+          <ScalarProperty Name="password" ColumnName="password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

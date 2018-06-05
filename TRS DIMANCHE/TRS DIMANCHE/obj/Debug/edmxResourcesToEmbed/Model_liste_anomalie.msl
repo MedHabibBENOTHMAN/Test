@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="parametreModel_liste_anomalieStoreContainer" CdmEntityContainer="parametreEntities_liste_anomalie">
+    <EntitySetMapping Name="liste_rebut">
+      <EntityTypeMapping TypeName="parametreModel_liste_anomalie.liste_rebut">
+        <MappingFragment StoreEntitySet="liste_rebut">
+          <ScalarProperty Name="idrebut" ColumnName="idrebut" />
+          <ScalarProperty Name="rebut" ColumnName="rebut" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="trs_machineModel_arrets" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="machine_1_arrets">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="date" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="arret" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="debut" Type="DateTime" />
+    <Property Name="fin" Type="DateTime" />
+    <Property Name="duree" Type="Int32" />
+    <Property Name="of_1" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="of_2" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="type_arret" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="arrets_non_identifiés" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="machine_1_arrets" EntityType="Self.machine_1_arrets" />
+  </EntityContainer>
+</Schema>

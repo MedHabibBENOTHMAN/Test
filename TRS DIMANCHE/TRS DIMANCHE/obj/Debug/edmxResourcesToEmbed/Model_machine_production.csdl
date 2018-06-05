@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="machine_production_model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="machine_1_production">
+    <Key>
+      <PropertyRef Name="idmachine_1_production" />
+    </Key>
+    <Property Name="idmachine_1_production" Type="Int32" Nullable="false" />
+    <Property Name="debut" Type="DateTime" />
+    <Property Name="fin" Type="DateTime" />
+    <Property Name="of_1" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="of_2" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="ref_1" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="ref_2" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="moule" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="matiere" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="palette" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="empreinte" Type="Int32" />
+    <Property Name="description" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="ref_1_total" Type="Int32" />
+    <Property Name="ref_2_total" Type="Int32" />
+    <Property Name="ref_1_rebut" Type="Int32" />
+    <Property Name="ref_2_rebut" Type="Int32" />
+    <Property Name="ref_1_qualite" Type="Double" />
+    <Property Name="ref_2_qualite" Type="Double" />
+  </EntityType>
+  <EntityContainer Name="machine_1_production_Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="machine_1_production" EntityType="Self.machine_1_production" />
+  </EntityContainer>
+</Schema>

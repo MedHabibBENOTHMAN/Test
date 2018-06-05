@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="parametreModel3" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="moule">
+    <Key>
+      <PropertyRef Name="idmoule" />
+    </Key>
+    <Property Name="idmoule" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="reference" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="produit" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="description" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="empreinte" Type="Int32" />
+    <Property Name="qualite_seuil_1" Type="Double" />
+    <Property Name="qualite_seuil_2" Type="Double" />
+    <Property Name="qualite_seuil_3" Type="Double" />
+    <Property Name="temps_de_cycle" Type="Double" />
+  </EntityType>
+  <EntityContainer Name="Entities_moule" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="moule" EntityType="Self.moule" />
+  </EntityContainer>
+</Schema>

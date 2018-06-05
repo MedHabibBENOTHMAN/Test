@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="trs_machineModelStoreContainer" CdmEntityContainer="trs_machineEntities">
+    <EntitySetMapping Name="machine_1_arrets">
+      <EntityTypeMapping TypeName="trs_machineModel.machine_1_arrets">
+        <MappingFragment StoreEntitySet="machine_1_arrets">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="temps" ColumnName="temps" />
+          <ScalarProperty Name="of" ColumnName="of" />
+          <ScalarProperty Name="arret" ColumnName="arret" />
+          <ScalarProperty Name="duree" ColumnName="duree" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="machine_1_trs">
+      <EntityTypeMapping TypeName="trs_machineModel.machine_1_trs">
+        <MappingFragment StoreEntitySet="machine_1_trs">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="equipe" ColumnName="equipe" />
+          <ScalarProperty Name="temps_brut" ColumnName="temps_brut" />
+          <ScalarProperty Name="temps_requis" ColumnName="temps_requis" />
+          <ScalarProperty Name="disponibilite" ColumnName="disponibilite" />
+          <ScalarProperty Name="qte_produite" ColumnName="qte_produite" />
+          <ScalarProperty Name="qte_acceptee" ColumnName="qte_acceptee" />
+          <ScalarProperty Name="qualite" ColumnName="qualite" />
+          <ScalarProperty Name="cadence_reele" ColumnName="cadence_reele" />
+          <ScalarProperty Name="cadence_therorique" ColumnName="cadence_therorique" />
+          <ScalarProperty Name="performance" ColumnName="performance" />
+          <ScalarProperty Name="TRS" ColumnName="TRS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

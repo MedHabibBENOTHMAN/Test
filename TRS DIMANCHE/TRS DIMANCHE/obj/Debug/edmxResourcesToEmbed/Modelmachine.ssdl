@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="trs_machineModel.Store" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.5" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="machine_1_arrets">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="temps" Type="timestamp" Precision="0" />
+    <Property Name="of" Type="varchar" MaxLength="45" />
+    <Property Name="arret" Type="varchar" MaxLength="45" />
+    <Property Name="duree" Type="int" />
+  </EntityType>
+  <EntityType Name="machine_1_trs">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="date" Type="date" />
+    <Property Name="equipe" Type="varchar" MaxLength="45" />
+    <Property Name="temps_brut" Type="double" />
+    <Property Name="temps_requis" Type="double" />
+    <Property Name="disponibilite" Type="double" />
+    <Property Name="qte_produite" Type="int" />
+    <Property Name="qte_acceptee" Type="int" />
+    <Property Name="qualite" Type="double" />
+    <Property Name="cadence_reele" Type="double" />
+    <Property Name="cadence_therorique" Type="double" />
+    <Property Name="performance" Type="double" />
+    <Property Name="TRS" Type="double" />
+  </EntityType>
+  <EntityContainer Name="trs_machineModelStoreContainer">
+    <EntitySet Name="machine_1_arrets" EntityType="Self.machine_1_arrets" Schema="trs_machine" store:Type="Tables" />
+    <EntitySet Name="machine_1_trs" EntityType="Self.machine_1_trs" Schema="trs_machine" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
